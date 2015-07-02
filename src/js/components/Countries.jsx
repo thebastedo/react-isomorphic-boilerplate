@@ -12,7 +12,7 @@ let Countries = React.createClass({
 
   componentWillMount() {
     console.log('Countries CWM');
-    setTimeout(() => { CountriesClient.get(this.updateCountries) }, 500);
+    CountriesClient.get(this.updateCountries);
   },
 
   updateCountries(countryObj) {
